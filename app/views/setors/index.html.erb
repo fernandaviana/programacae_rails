@@ -1,0 +1,31 @@
+<h1>Listas de setors</h1>
+
+<table>
+  <tr>
+    <th>Nomesetor</th>
+    <th>Coordenador</th>
+    <th>Totalsetor</th>
+    <th>Emailsetor</th>
+    <th>Ramal</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @setors.each do |setor| %>
+  <tr>
+    <td><%= setor.nomesetor %></td>
+    <td><%= setor.coordenador %></td>
+    <td><%= setor.totalsetor %></td>
+    <td><%= setor.emailsetor %></td>
+    <td><%= setor.ramal %></td>
+    <td><%= link_to 'Mostrar', setor %></td>
+    <td><%= link_to 'Editar', edit_setor_path(setor) %></td>
+    <td><%= link_to 'Excluir', setor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Novo Setor', new_setor_path %>

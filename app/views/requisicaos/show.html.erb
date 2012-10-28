@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Datarequisicao:</b>
+  <%= @requisicao.datarequisicao %>
+</p>
+
+<p>
+  <b>Quantidadebolsista:</b>
+  <%= @requisicao.quantidadebolsista %>
+</p>
+
+<p>
+  <b>Horariobolsista:</b>
+  <%= @requisicao.horariobolsista %>
+</p>
+
+<p>
+  <b>Assunto:</b>
+  <%= @requisicao.assunto %>
+</p>
+
+<p>
+  <b>Nomedebolsista:</b>
+  <%= @requisicao.nomedebolsista %>
+</p>
+
+<p>
+  <b>Setor:</b>
+  <%= @requisicao.setor %>
+</p>
+
+
+<%= link_to 'Edit', edit_requisicao_path(@requisicao) %> |
+<%= link_to 'Back', requisicaos_path %>

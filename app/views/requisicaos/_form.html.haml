@@ -1,0 +1,9 @@
+= semantic_form_for [@requisicao] do |form|
+  
+  = form.input :datarequisicao, :label => 'Datarequisicao' 
+  = form.input :quantidadebolsista, :label => 'Quantidadebolsista'
+  = form.input :horariobolsista, :label => 'Horariobolsista'
+  = form.input :assunto, :label => 'Assunto'
+  = form.input :nomedebolsista, :label => 'Nomedebolsista'
+  = form.input :setor, :member_label => :nomesetor, :label => 'setor' 
+  = form.submit 'Salvar'

@@ -1,0 +1,33 @@
+<h1>Lista de requisicaos</h1>
+
+<table>
+  <tr>
+    <th>Datarequisicao</th>
+    <th>Quantidadebolsista</th>
+    <th>Horariobolsista</th>
+    <th>Assunto</th>
+    <th>Nomedebolsista</th>
+    <th>Setor</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @requisicaos.each do |requisicao| %>
+  <tr>
+    <td><%= requisicao.datarequisicao %></td>
+    <td><%= requisicao.quantidadebolsista %></td>
+    <td><%= requisicao.horariobolsista %></td>
+    <td><%= requisicao.assunto %></td>
+    <td><%= requisicao.nomedebolsista %></td>
+    <td><%= requisicao.setor %></td>
+    <td><%= link_to 'Mostrar', requisicao %></td>
+    <td><%= link_to 'Editar', edit_requisicao_path(requisicao) %></td>
+    <td><%= link_to 'Excluir', requisicao, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Nova Requisicao', new_requisicao_path %>
