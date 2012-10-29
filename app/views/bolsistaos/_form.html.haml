@@ -1,0 +1,25 @@
+= semantic_form_for [@bolsistao] do |form|
+  
+  = form.input :matricula, :label => 'Matricula' 
+  = form.input :numeropasta, :label => 'NumeroPasta'
+  = form.input :nomebolsista, :label => 'NomeBolsista'
+  = form.input :endereco, :label => 'Endereço'
+  = form.input :bairro, :label => 'Bairro'
+  = form.input :cidade, :label => 'Cidade'
+  = form.input :estado, :label => 'Estado'
+  = form.input :telefoneresidencial, :label => 'TelefoneResidencial'
+  = form.input :telefonecelular, :label => 'TelefoneCelular'
+  = form.input :email, :label => 'Email'
+  = form.input :cpf, :label => 'CPF'
+  = form.input :rg, :label => 'RG'
+  = form.input :situacao, :label => 'Situação'
+  = form.input :nomebanco, :label => 'NomeBanco'
+  = form.input :numeroagencia, :label => 'NumeroAgencia'
+  = form.input :numeroconta, :label => 'NumeroConta'
+  = form.input :semestreinicialcurso, :label => 'SemestreInicialCurso'
+  = form.input :anoinicialcurso, :label => 'AnoInicialCurso'
+  = form.input :observacao, :label => 'Observação'
+
+
+  = form.input :curso, :member_label => :nomecurso, :label => 'curso' 
+  = form.submit 'Salvar'

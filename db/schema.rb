@@ -11,9 +11,9 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121028235912) do
+ActiveRecord::Schema.define(:version => 20121029113414) do
 
-  create_table "bolsista", :force => true do |t|
+  create_table "bolsistaos", :force => true do |t|
     t.string   "matricula"
     t.string   "numeropasta"
     t.string   "nomebolsista"
@@ -38,7 +38,7 @@ ActiveRecord::Schema.define(:version => 20121028235912) do
     t.datetime "updated_at",           :null => false
   end
 
-  add_index "bolsista", ["curso_id"], :name => "index_bolsista_on_curso_id"
+  add_index "bolsistaos", ["curso_id"], :name => "index_bolsistaos_on_curso_id"
 
   create_table "cursos", :force => true do |t|
     t.string   "nomecurso"

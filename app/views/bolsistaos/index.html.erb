@@ -1,0 +1,61 @@
+<h1>Listing bolsistaos</h1>
+
+<table>
+  <tr>
+    <th>Matricula</th>
+    <th>NumeroPasta</th>
+    <th>NomeBolsista</th>
+    <th>Endereco</th>
+    <th>Bairro</th>
+    <th>Cidade</th>
+    <th>Estado</th>
+    <th>TelefoneResidencial</th>
+    <th>TelefoneCelular</th>
+    <th>Email</th>
+    <th>Cpf</th>
+    <th>Rg</th>
+    <th>Situacao</th>
+    <th>NomeBanco</th>
+    <th>NumeroAgencia</th>
+    <th>NumeroConta</th>
+    <th>SemestreInicialCurso</th>
+    <th>AnoInicialCurso</th>
+    <th>Observação</th>
+    <th>Curso</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @bolsistaos.each do |bolsistao| %>
+  <tr>
+    <td><%= bolsistao.matricula %></td>
+    <td><%= bolsistao.numeropasta %></td>
+    <td><%= bolsistao.nomebolsista %></td>
+    <td><%= bolsistao.endereco %></td>
+    <td><%= bolsistao.bairro %></td>
+    <td><%= bolsistao.cidade %></td>
+    <td><%= bolsistao.estado %></td>
+    <td><%= bolsistao.telefoneresidencial %></td>
+    <td><%= bolsistao.telefonecelular %></td>
+    <td><%= bolsistao.email %></td>
+    <td><%= bolsistao.cpf %></td>
+    <td><%= bolsistao.rg %></td>
+    <td><%= bolsistao.situacao %></td>
+    <td><%= bolsistao.nomebanco %></td>
+    <td><%= bolsistao.numeroagencia %></td>
+    <td><%= bolsistao.numeroconta %></td>
+    <td><%= bolsistao.semestreinicialcurso %></td>
+    <td><%= bolsistao.anoinicialcurso %></td>
+    <td><%= bolsistao.observacao %></td>
+    <td><%= bolsistao.curso %></td>
+    <td><%= link_to 'Show', bolsistao %></td>
+    <td><%= link_to 'Edit', edit_bolsistao_path(bolsistao) %></td>
+    <td><%= link_to 'Excluir', bolsistao, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Bolsistao', new_bolsistao_path %>
