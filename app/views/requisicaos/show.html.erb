@@ -26,10 +26,10 @@
 </p>
 
 <p>
-  <b>Setor:</b>
-  <%= @requisicao.setor %>
+  <b>setor:</b>
+  <%= @requisicao.setor.nomesetor %>
 </p>
 
 
-<%= link_to 'Edit', edit_requisicao_path(@requisicao) %> |
-<%= link_to 'Back', requisicaos_path %>
+<%= link_to 'Editar', edit_requisicao_path(@requisicao) %> |
+<%= link_to 'Voltar', requisicaos_path %>

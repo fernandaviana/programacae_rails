@@ -11,7 +11,34 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121028163905) do
+ActiveRecord::Schema.define(:version => 20121028235912) do
+
+  create_table "bolsista", :force => true do |t|
+    t.string   "matricula"
+    t.string   "numeropasta"
+    t.string   "nomebolsista"
+    t.string   "endereco"
+    t.string   "bairro"
+    t.string   "cidade"
+    t.string   "estado"
+    t.string   "telefoneresidencial"
+    t.string   "telefonecelular"
+    t.string   "email"
+    t.string   "cpf"
+    t.string   "rg"
+    t.string   "situacao"
+    t.string   "nomebanco"
+    t.string   "numeroagencia"
+    t.string   "numeroconta"
+    t.integer  "semestreinicialcurso"
+    t.string   "anoinicialcurso"
+    t.text     "observacao"
+    t.integer  "curso_id"
+    t.datetime "created_at",           :null => false
+    t.datetime "updated_at",           :null => false
+  end
+
+  add_index "bolsista", ["curso_id"], :name => "index_bolsista_on_curso_id"
 
   create_table "cursos", :force => true do |t|
     t.string   "nomecurso"

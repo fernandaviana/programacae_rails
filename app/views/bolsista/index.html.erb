@@ -1,0 +1,61 @@
+<h1>Listing bolsista</h1>
+
+<table>
+  <tr>
+    <th>Matricula</th>
+    <th>Numeropasta</th>
+    <th>Nomebolsista</th>
+    <th>Endereco</th>
+    <th>Bairro</th>
+    <th>Cidade</th>
+    <th>Estado</th>
+    <th>Telefoneresidencial</th>
+    <th>Telefonecelular</th>
+    <th>Email</th>
+    <th>Cpf</th>
+    <th>Rg</th>
+    <th>Situacao</th>
+    <th>Nomebanco</th>
+    <th>Numeroagencia</th>
+    <th>Numeroconta</th>
+    <th>Semestreinicialcurso</th>
+    <th>Anoinicialcurso</th>
+    <th>Observacao</th>
+    <th>Curso</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @bolsista.each do |bolsistum| %>
+  <tr>
+    <td><%= bolsistum.matricula %></td>
+    <td><%= bolsistum.numeropasta %></td>
+    <td><%= bolsistum.nomebolsista %></td>
+    <td><%= bolsistum.endereco %></td>
+    <td><%= bolsistum.bairro %></td>
+    <td><%= bolsistum.cidade %></td>
+    <td><%= bolsistum.estado %></td>
+    <td><%= bolsistum.telefoneresidencial %></td>
+    <td><%= bolsistum.telefonecelular %></td>
+    <td><%= bolsistum.email %></td>
+    <td><%= bolsistum.cpf %></td>
+    <td><%= bolsistum.rg %></td>
+    <td><%= bolsistum.situacao %></td>
+    <td><%= bolsistum.nomebanco %></td>
+    <td><%= bolsistum.numeroagencia %></td>
+    <td><%= bolsistum.numeroconta %></td>
+    <td><%= bolsistum.semestreinicialcurso %></td>
+    <td><%= bolsistum.anoinicialcurso %></td>
+    <td><%= bolsistum.observacao %></td>
+    <td><%= bolsistum.curso %></td>
+    <td><%= link_to 'Show', bolsistum %></td>
+    <td><%= link_to 'Edit', edit_bolsistum_path(bolsistum) %></td>
+    <td><%= link_to 'Destroy', bolsistum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Bolsistum', new_bolsistum_path %>

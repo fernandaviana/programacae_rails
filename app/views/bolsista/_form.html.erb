@@ -1,0 +1,97 @@
+<%= form_for(@bolsistum) do |f| %>
+  <% if @bolsistum.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@bolsistum.errors.count, "error") %> prohibited this bolsistum from being saved:</h2>
+
+      <ul>
+      <% @bolsistum.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :matricula %><br />
+    <%= f.text_field :matricula %>
+  </div>
+  <div class="field">
+    <%= f.label :numeropasta %><br />
+    <%= f.text_field :numeropasta %>
+  </div>
+  <div class="field">
+    <%= f.label :nomebolsista %><br />
+    <%= f.text_field :nomebolsista %>
+  </div>
+  <div class="field">
+    <%= f.label :endereco %><br />
+    <%= f.text_field :endereco %>
+  </div>
+  <div class="field">
+    <%= f.label :bairro %><br />
+    <%= f.text_field :bairro %>
+  </div>
+  <div class="field">
+    <%= f.label :cidade %><br />
+    <%= f.text_field :cidade %>
+  </div>
+  <div class="field">
+    <%= f.label :estado %><br />
+    <%= f.text_field :estado %>
+  </div>
+  <div class="field">
+    <%= f.label :telefoneresidencial %><br />
+    <%= f.text_field :telefoneresidencial %>
+  </div>
+  <div class="field">
+    <%= f.label :telefonecelular %><br />
+    <%= f.text_field :telefonecelular %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :cpf %><br />
+    <%= f.text_field :cpf %>
+  </div>
+  <div class="field">
+    <%= f.label :rg %><br />
+    <%= f.text_field :rg %>
+  </div>
+  <div class="field">
+    <%= f.label :situacao %><br />
+    <%= f.text_field :situacao %>
+  </div>
+  <div class="field">
+    <%= f.label :nomebanco %><br />
+    <%= f.text_field :nomebanco %>
+  </div>
+  <div class="field">
+    <%= f.label :numeroagencia %><br />
+    <%= f.text_field :numeroagencia %>
+  </div>
+  <div class="field">
+    <%= f.label :numeroconta %><br />
+    <%= f.text_field :numeroconta %>
+  </div>
+  <div class="field">
+    <%= f.label :semestreinicialcurso %><br />
+    <%= f.number_field :semestreinicialcurso %>
+  </div>
+  <div class="field">
+    <%= f.label :anoinicialcurso %><br />
+    <%= f.text_field :anoinicialcurso %>
+  </div>
+  <div class="field">
+    <%= f.label :observacao %><br />
+    <%= f.text_area :observacao %>
+  </div>
+  <div class="field">
+    <%= f.label :curso %><br />
+    <%= f.text_field :curso %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
