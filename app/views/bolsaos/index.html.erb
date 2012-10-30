@@ -1,0 +1,37 @@
+<h1>Listas de bolsas</h1>
+
+<table>
+  <tr>
+    <th>Dataentrada</th>
+    <th>Horarioatuacao</th>
+    <th>Datasaida</th>
+    <th>Campo</th>
+    <th>Motivo</th>
+    <th>Bolsadicional</th>
+    <th>Bolsistao</th>
+    <th>Setor</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @bolsaos.each do |bolsao| %>
+  <tr>
+    <td><%= bolsao.dataentrada %></td>
+    <td><%= bolsao.horarioatuacao %></td>
+    <td><%= bolsao.datasaida %></td>
+    <td><%= bolsao.campo %></td>
+    <td><%= bolsao.motivo %></td>
+    <td><%= bolsao.bolsadicional %></td>
+    <td><%= bolsao.bolsistao %></td>
+    <td><%= bolsao.setor %></td>
+    <td><%= link_to 'Mostrar', bolsao %></td>
+    <td><%= link_to 'Editar', edit_bolsao_path(bolsao) %></td>
+    <td><%= link_to 'Excluir', bolsao, method: :delete, data: { confirm: 'Você tem certeza?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to ' Nova Bolsa', new_bolsao_path %>

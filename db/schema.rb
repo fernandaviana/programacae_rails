@@ -11,7 +11,23 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121029113414) do
+ActiveRecord::Schema.define(:version => 20121028235912) do
+
+  create_table "bolsaos", :force => true do |t|
+    t.string   "dataentrada"
+    t.string   "horarioatuacao"
+    t.string   "datasaida"
+    t.string   "campo"
+    t.string   "motivo"
+    t.string   "bolsadicional"
+    t.integer  "bolsistao_id"
+    t.integer  "setor_id"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
+
+  add_index "bolsaos", ["bolsistao_id"], :name => "index_bolsaos_on_bolsistao_id"
+  add_index "bolsaos", ["setor_id"], :name => "index_bolsaos_on_setor_id"
 
   create_table "bolsistaos", :force => true do |t|
     t.string   "matricula"

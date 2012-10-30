@@ -1,4 +1,4 @@
-<h1>Listing bolsistaos</h1>
+<h1>Lista de bolsistas</h1>
 
 <table>
   <tr>
@@ -49,13 +49,13 @@
     <td><%= bolsistao.anoinicialcurso %></td>
     <td><%= bolsistao.observacao %></td>
     <td><%= bolsistao.curso %></td>
-    <td><%= link_to 'Show', bolsistao %></td>
-    <td><%= link_to 'Edit', edit_bolsistao_path(bolsistao) %></td>
-    <td><%= link_to 'Excluir', bolsistao, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'mostrar', bolsistao %></td>
+    <td><%= link_to 'Editar', edit_bolsistao_path(bolsistao) %></td>
+    <td><%= link_to 'Excluir', bolsistao, method: :delete, data: { confirm: 'Você tem certeza?' } %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Bolsistao', new_bolsistao_path %>
+<%= link_to 'Novo Bolsista', new_bolsistao_path %>

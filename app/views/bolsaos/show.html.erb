@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>DataEntrada:</b>
+  <%= @bolsao.dataentrada %>
+</p>
+
+<p>
+  <b>HorarioAtuação:</b>
+  <%= @bolsao.horarioatuacao %>
+</p>
+
+<p>
+  <b>DataSaida:</b>
+  <%= @bolsao.datasaida %>
+</p>
+
+<p>
+  <b>Campo:</b>
+  <%= @bolsao.campo %>
+</p>
+
+<p>
+  <b>Motivo:</b>
+  <%= @bolsao.motivo %>
+</p>
+
+<p>
+  <b>Bolsadicional:</b>
+  <%= @bolsao.bolsadicional %>
+</p>
+
+<p>
+  <b>Bolsista:</b>
+  <%= @bolsao.bolsistao.nomebolsista %>
+</p>
+
+<p>
+  <b>setor:</b>
+  <%= @bolsao.setor.nomesetor %>
+</p>
+
+
+<%= link_to 'Editar', edit_bolsao_path(@bolsao) %> |
+<%= link_to 'Voltar', bolsaos_path %>

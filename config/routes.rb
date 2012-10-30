@@ -1,4 +1,6 @@
 Coordenacao::Application.routes.draw do
+  resources :bolsaos
+
   resources :bolsistaos
 
   resources :requisicaos

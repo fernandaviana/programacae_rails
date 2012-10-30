@@ -1,0 +1,14 @@
+= semantic_form_for [@bolsao] do |form|
+  
+  = form.input :dataentrada, :label => 'DataEntrada' 
+  = form.input :horarioatuacao, :label => 'HorarioAtuação'
+  = form.input :datasaida, :label => 'DataSaida'
+  = form.input :campo, :label => 'Campo'
+  = form.input :motivo, :label => 'Motivo'
+  = form.input :bolsadicional, :label => 'Bolsadicional'
+
+  = form.input :setor, :member_label => :nomesetor, :label => 'Setor' 
+  = form.input :bolsistao, :member_label => :nomebolsista, :label => 'Bolsista' 
+ 
+ 
+  = form.submit 'Salvar'

@@ -18,6 +18,7 @@
    scenario 'alterar requisicao' do #, :javascript => true  do
 
     setor = FactoryGirl.create(:setor, :nomesetor => 'cae')
+    
     requisicao = FactoryGirl.create(:requisicao,:setor => setor)
 
      visit edit_requisicao_path(requisicao)
