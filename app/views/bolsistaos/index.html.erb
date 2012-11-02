@@ -2,29 +2,7 @@
 
 <table>
   <tr>
-    <th>Matricula</th>
-    <th>NumeroPasta</th>
-    <th>NomeBolsista</th>
-    <th>Endereco</th>
-    <th>Bairro</th>
-    <th>Cidade</th>
-    <th>Estado</th>
-    <th>TelefoneResidencial</th>
-    <th>TelefoneCelular</th>
-    <th>Email</th>
-    <th>Cpf</th>
-    <th>Rg</th>
-    <th>Situacao</th>
-    <th>NomeBanco</th>
-    <th>NumeroAgencia</th>
-    <th>NumeroConta</th>
-    <th>SemestreInicialCurso</th>
-    <th>AnoInicialCurso</th>
-    <th>Observação</th>
-    <th>Curso</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    
   </tr>
 
 <% @bolsistaos.each do |bolsistao| %>
@@ -49,7 +27,7 @@
     <td><%= bolsistao.anoinicialcurso %></td>
     <td><%= bolsistao.observacao %></td>
     <td><%= bolsistao.curso %></td>
-    <td><%= link_to 'mostrar', bolsistao %></td>
+    <td><%= link_to 'Mostrar', bolsistao %></td>
     <td><%= link_to 'Editar', edit_bolsistao_path(bolsistao) %></td>
     <td><%= link_to 'Excluir', bolsistao, method: :delete, data: { confirm: 'Você tem certeza?' } %></td>
   </tr>

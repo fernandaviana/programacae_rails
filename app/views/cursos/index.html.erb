@@ -1,12 +1,8 @@
-<h1>Listas de cursos</h1>
+<h1>Lista de Cursos</h1>
 
 <table>
   <tr>
-    <th>Nomecurso</th>
-    <th>Numeroperiodo</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    
   </tr>
 
 <% @cursos.each do |curso| %>
@@ -15,7 +11,7 @@
     <td><%= curso.numeroperiodo %></td>
     <td><%= link_to 'Mostrar', curso %></td>
     <td><%= link_to 'Editar', edit_curso_path(curso) %></td>
-    <td><%= link_to 'Excluir', curso, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Excluir', curso, method: :delete, data: { confirm: 'Você tem certeza?' } %></td>
   </tr>
 <% end %>
 </table>

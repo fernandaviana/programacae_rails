@@ -1,0 +1,2 @@
+module BolsaHelper
+end

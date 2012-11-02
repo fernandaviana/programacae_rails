@@ -1,4 +1,11 @@
 Coordenacao::Application.routes.draw do
+
+  #get "home/index"
+
+  get "bolsa/index"
+     
+  root :to=> "bolsa#index"
+
   resources :bolsaos
 
   resources :bolsistaos

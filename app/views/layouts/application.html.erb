@@ -1,14 +1,78 @@
 <!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <title>Coordenacao</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Bolsa de Iniciação Profissional</title>
+  
+<%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag :application %>
+  <%= csrf_meta_tag %>
+
+<meta name="Keywords" content="" />
+<meta name="Description" content="" />
+
 </head>
 <body>
+<div id="header">
+	<h1>Bolsa de Iniciação Profissional</h1>
+	
+</div>
+<div id="content">
+	
+	<div id="colOne">
+		<div id="menu1">
+			<ul>
 
-<%= yield %>
+				<li id="menu-01"><a href="bolsaos">Cadastrar Bolsa</a></li>
+				<li id="menu-02"><a href="bolsistaos">Cadastrar Bolsista</a></li>
+				<li id="menu-03"><a href="cursos">Cadastrar Curso </a></li>
+				<li id="menu-04"><a href="setors">Cadastrar Setor </a></li>
+				<li id="menu-05"><a href="requisicaos">Cadastrar Requisição</a></li>
+                                 <li id="menu-06"><a href="#">Emitir Mapa</a></li>
+                                <li id="menu-07"><a href="#">Emitir Folha de Ponto </a></li>
+                                <li id="menu-08"><a href="#">Emitir Declaração </a></li>
+                                <li id="menu-09"><a href="#"> Emitir Situação </a></li>
+                              
+			</ul>
+		   </div>
+		
+		</div>
+
+	<div id="colTwo">   
+
+
+          <div id='page-bgtop'>          
+
+   
+  	      <div id='page-bgbtm'>
+                     
+                    <%= yield %> 
+	   
+
+  	      <div style="clear: both;">&nbsp;</div>
+             	
+                                   
+           </div>
+           </div>
+      </div>		
+</div>
+	<div style="clear: both;">&nbsp;</div>
+
+<div id="footer">
+
+	
+</div>
+
+
+
+
 
 </body>
 </html>
